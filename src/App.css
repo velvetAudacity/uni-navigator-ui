@@ -1,38 +1,97 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.course-list {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: #003366; /* Dark blue */
+}
+
+.language-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.left-panel {
+  flex: 1; 
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.right-panel {
+  flex: 2;
+  padding: 20px;
+  max-height: 100vh; 
+  overflow-y: auto; 
+}
+
+/* --- New Component Styles --- */
+.recommender-section, .calculator-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.search-input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.chance-result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.chance-percent {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #004a99;
 }
